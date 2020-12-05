@@ -67,7 +67,6 @@ extension ViewController: WKNavigationDelegate {
         
         
         
-        
 //        if let windowController = view.window?.windowController as? WindowController {
 //                windowController.addressEntry.stringValue = webView.url?.absoluteString ?? ""
 //            }
@@ -85,6 +84,14 @@ extension ViewController: WKNavigationDelegate {
 //        }
 //
 //        currentContentMode = navigation.effectiveContentMode
+    }
+    
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        
+        self.view.window?.title = webView.title ?? ""
+        if (self.view.window?.title == "") {
+            self.view.window?.title = webView.url?.absoluteString ?? ""
+        }
     }
 
 }
