@@ -8,7 +8,7 @@
 import Cocoa
 import WebKit
 
-class ViewController: NSViewController, WKNavigationDelegate {
+class ViewController: NSViewController {
 
     @IBOutlet weak var webView: WKWebView!
     
@@ -58,3 +58,33 @@ class ViewController: NSViewController, WKNavigationDelegate {
 
 }
 
+extension ViewController: WKNavigationDelegate {
+    func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
+        
+        if let windowController = view.window?.windowController as? WindowController {
+            windowController.urlField.stringValue = webView.url?.absoluteString ?? ""
+        }
+        
+        
+        
+        
+//        if let windowController = view.window?.windowController as? WindowController {
+//                windowController.addressEntry.stringValue = webView.url?.absoluteString ?? ""
+//            }
+        
+//        if let url = webView.url {
+//            if url.scheme != "file" {
+//                if let urlString = webView.url?.absoluteString {
+////                    UserDefaults.standard.set(urlString, forKey: "LastCommittedURLString")
+//                    urlField.text = urlString
+//                }
+//            } else {
+////                UserDefaults.standard.removeObject(forKey: "LastCommittedURLString")
+//                urlField.text = url.lastPathComponent
+//            }
+//        }
+//
+//        currentContentMode = navigation.effectiveContentMode
+    }
+
+}

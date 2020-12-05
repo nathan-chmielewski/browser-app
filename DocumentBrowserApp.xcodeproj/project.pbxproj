@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		488D3F97257C274B0005E463 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488D3F96257C274B0005E463 /* WindowController.swift */; };
 		48F68A6C257C07BD005AA9A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F68A6B257C07BD005AA9A8 /* AppDelegate.swift */; };
 		48F68A6E257C07BD005AA9A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F68A6D257C07BD005AA9A8 /* ViewController.swift */; };
 		48F68A70257C07BD005AA9A8 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F68A6F257C07BD005AA9A8 /* Document.swift */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		488D3F96257C274B0005E463 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 		48F68A68257C07BD005AA9A8 /* DocumentBrowserApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DocumentBrowserApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48F68A6B257C07BD005AA9A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48F68A6D257C07BD005AA9A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			children = (
 				48F68A6B257C07BD005AA9A8 /* AppDelegate.swift */,
 				48F68A6D257C07BD005AA9A8 /* ViewController.swift */,
+				488D3F96257C274B0005E463 /* WindowController.swift */,
 				48F68A6F257C07BD005AA9A8 /* Document.swift */,
 				48F68A71257C07BE005AA9A8 /* Assets.xcassets */,
 				48F68A73257C07BE005AA9A8 /* Main.storyboard */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48F68A6E257C07BD005AA9A8 /* ViewController.swift in Sources */,
+				488D3F97257C274B0005E463 /* WindowController.swift in Sources */,
 				48F68A6C257C07BD005AA9A8 /* AppDelegate.swift in Sources */,
 				48F68A70257C07BD005AA9A8 /* Document.swift in Sources */,
 			);
